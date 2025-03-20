@@ -1,0 +1,35 @@
+Given an array of integers, arr[]. Find if there is a subarray (of size at least one) with 0 sum. Return true/false depending upon whether there is a subarray present with 0-sum or not.
+<br>
+Input Format
+<br>
+The first line contains an integer n (size of the array).<br>
+The second line contains n space-separated integers representing the elements of the array.<br>
+Constraints<br>
+
+1 <= n <= 10^5<br>
+-10^6 <= array elements <= 10^6<br>
+Output Format<br>
+
+Print true if there exists a subarray with sum 0, otherwise print false.<br>
+
+Sample Input 0<br>
+
+5<br>
+4 2 -3 1 6<br>
+Sample Output 0<br>
+
+true<br>
+Explanation 0<br>
+
+The subarray [2, -3, 1] has a sum of 0. <br>
+
+Sample Input 1 <br>
+
+4 <br>
+1 2 3 4 <br>
+Sample Output 1 <br>
+
+false <br>
+Explanation 1<br>
+
+There is no subarray with a sum of 0. <br>
