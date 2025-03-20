@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <unordered_set>
+using namespace std;
+
+
+int main() {
+    int n,psum=0;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    unordered_set<int>s;
+    bool isexist=false;
+    for(int i=0;i<n;i++){
+        psum+=a[i];
+        if(s.find(psum)!=s.end()){
+            isexist=true;
+            break;
+        }
+        if(psum==0){
+            isexist= true;
+            break;
+        }
+        s.insert(psum);
+    }
+    cout<<boolalpha<<isexist;
+    return 0;
+}
